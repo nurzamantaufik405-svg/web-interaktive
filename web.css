@@ -1,0 +1,195 @@
+footer {
+  background-color: #434343;
+  padding: 20px;
+  text-align: center;
+
+}
+
+header {
+  padding: 40px;
+  text-align: center;
+  color: #434343;
+}
+
+body {
+  background-image: url(../image/6397025.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+/*search bar dari uiverse*/
+.input {
+  width: 100%;
+  max-width: 200px;
+  height: 20px;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1.5px solid lightgray;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  box-shadow: 0px 0px 20px -18px;
+}
+
+.input:hover {
+  border: 2px solid lightgray;
+  box-shadow: 0px 0px 29px -17px;
+}
+
+.input:active {
+  transform: scale(0.95);
+}
+
+.input:focus {
+  border: 2px solid lightgray;
+}
+
+/* Sidebar container */
+.sidebar {
+  height: 100vh;
+  /* penuh tinggi layar */
+  width: 219px;
+  /* lebar sidebar */
+  position: fixed;
+  /* tetap di tempat saat di-scroll */
+  top: 0;
+  left: 0;
+  background-color: #3f3e3e;
+  /* warna gelap */
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+/* Judul menu */
+.sidebar h2 {
+  color: rgba(255, 255, 255, 0.864);
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+/* Link menu sidebar */
+.sidebar a {
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  display: block;
+}
+
+.sidebar a:hover {
+  background-color: #fefefe;
+  color: #fffdfd;
+}
+
+/* Konten utama */
+.content {
+  margin-left: 400px;
+  /* beri ruang sidebar */
+  padding: 20px;
+}
+
+
+/* Animasi pop-up saat hover */
+.sidebar a::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s ease, height 0.3s ease;
+  z-index: -1;
+}
+
+/* Saat hover, pop-up muncul dan teks berubah warna */
+.sidebar a:hover::before {
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar a:hover {
+  color: black;
+  box-shadow: 0 0 18px #000000;
+  transform: scale(1.05);
+}
+
+/* Konten utama */
+.content {
+  margin-left: 300px;
+  /* beri ruang sidebar */
+  padding: 20px;
+}
+
+/* Gaya umum untuk body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #515050;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Container untuk kartu */
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  margin-right: 10px;
+  gap: 30px;
+  flex-wrap: wrap;
+  bottom: 100px;
+}
+
+
+
+/* Gaya kartu default */
+.card {
+  width: 190px;
+  height: 254px;
+  background-image: linear-gradient(163deg, #7b7b7b 0%, #48474b 100%);
+  border-radius: 20px;
+  transition: all .3s;
+}
+
+.card2 {
+  width: 190px;
+  height: 254px;
+  background-color: #1a1a1a;
+  border-radius: none;
+  transition: all .2s;
+}
+
+.card2:hover {
+  transform: scale(0.98);
+  border-radius: 20px;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+}
+
+
+
+
+
+/* Efek saat hover */
+.card:hover {
+  background-color: #e0f7fa;
+  border-color: #007bff;
+  transform: scale(1.1);
+  /* Membesarkan kartu */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Tambah bayangan */
+}
+
+.card h2 {
+  color: #333;
+}
+
+.card p {
+  color: #ffffff;
+}
